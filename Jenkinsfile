@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/yasminashraf058/html-cicd-project.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'docker build -t html-website .'
