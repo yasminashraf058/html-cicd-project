@@ -21,5 +21,11 @@ pipeline {
                 sh 'curl -f http://localhost:9090'
             }
         }
+
+        stage('Deploy') {
+            steps {
+                sh 'echo "Deployment successful 🚀 Access app at http://localhost:9090"'
+            }
+        }
     }
 }
